@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demircin</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #d0000d;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #d0000d;
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.logo img {
+    height: 70px;
+    
+    padding: 15px 20px;
+    border-radius: 20px;
+}
+
+.menu {
+    display: flex;
+    gap: 25px;
+}
+
+.menu a {
+    color:white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    position: relative;
+}
+
+.menu a span {
+    color: white;
+    margin-left: 5px;
+}
+
+.actions {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.search {
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+}
+
+.language {
+    font-size: 14px;
+    color: white;
+    border: 1px solid white;
+    padding: 2px 5px;
+    border-radius: 4px;
+}
+
+.online-btn {
+    background-color: #d0000d;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .menu {
+        display: none;
+    }
+
+    .navbar {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f5f5f5;
+}
+
+.hakkimizda {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    background-color: white;
+    max-width: 1200px;
+    margin: 50px auto;
+    border-radius: 20px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.hakkimizda-img img {
+    width: 500px;
+    height: auto;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+.hakkimizda-yazi {
+    margin-left: 40px;
+    max-width: 600px;
+}
+
+.hakkimizda-yazi h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color:#d0000d;
+}
+
+.hakkimizda-yazi p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #555;
+}
+
+@media (max-width: 768px) {
+    .hakkimizda {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hakkimizda-img img {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .hakkimizda-yazi {
+        margin-left: 0;
+    }
+}
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f5f5f5;
+}
+
+.urunler {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: white;
+    max-width: 1200px;
+    margin: 50px auto;
+    border-radius: 20px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.urunler h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    color:#d0000d;
+}
+
+.urunler-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.urun-kart {
+    background-color: #fafafa;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.urun-kart:hover {
+    transform: translateY(-5px);
+}
+
+.urun-kart img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.urun-kart h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color:#d0000d;
+}
+
+.urun-kart p {
+    font-size: 16px;
+    color: #555;
+}
+
+@media (max-width: 600px) {
+    .urun-kart img {
+        height: 150px;
+    }
+}
+.iletisim {
+  padding: 50px 20px;
+  background-color: #f5f5f5;
+  text-align: center;
+}
+
+.iletisim h2 {
+  font-size: 32px;
+  color: #333;
+  margin-bottom: 30px;
+  color:#d0000d;
+}
+
+.iletisim-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.iletisim-form {
+  flex: 1 1 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.iletisim-form input,
+.iletisim-form textarea {
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+.iletisim-form button {
+  padding: 12px;
+  background-color:#d0000d;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.iletisim-form button:hover {
+  background-color: #555;
+}
+
+.konum {
+  flex: 1 1 500px;
+  text-align: left;
+  
+}
+.site-footer {
+    background-color:#d0000d;
+    color: #ffffff;
+    padding: 40px 20px 20px 20px;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-logo img {
+    width: 150px;
+    margin-bottom: 10px;
+}
+
+.footer-logo p {
+    max-width: 250px;
+    font-size: 14px;
+    color:white;
+}
+
+.footer-links h3,
+.footer-contact h3,
+.footer-social h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    color:white;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    color:white;
+}
+
+.footer-contact p {
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+.footer-social a {
+    color:white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.footer-social a:hover {
+    color:white;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 14px;
+    border-top: 1px solid #333;
+    padding-top: 15px;
+    color: #777;
+}
+
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-logo, .footer-links, .footer-contact, .footer-social {
+        margin-bottom: 20px;
+    }
+}
+
+
+
+
+    </style>
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">
+            <img src="logo2.png" alt="Demircin Logo">
+
+        </div>
+        <nav class="menu">
+            <a href="#anasayfa">Anasayfa <span>+</span></a>
+            <a href="#hakkımda">Hakkımızda <span>+</span></a>
+            <a href="#urun">Ürünler <span>+</span></a>
+            <a href="#iletişim">İletişim <span>+</span></a>
+           
+        </nav>
+        </div>
+       <section class="anasayfa" id="anasayfa"></section>
+    </header>
+     <img src="demir.png" width="1505" height="650">
+     
+<section class="hakkimizda">
+    <div class="hakkimizda-img">
+        <img src="https://www.steelradar.com/i/l/013/0135114_10mm-insaat-demiri.jpeg" alt="Hakkımızda Görseli">
+    </div>
+    <div class="hakkimizda-yazi">
+        <section class="hakkımda" id="hakkımda"></section>
+        <h2>Hakkımızda</h2>
+        <p>
+            Firmamız, yıllardır sektörde edindiği tecrübeyle müşterilerine kaliteli hizmet sunmaktadır.
+            Misyonumuz, yenilikçi ve sürdürülebilir çözümlerle müşteri memnuniyetini en üst düzeyde tutmaktır.
+            Vizyonumuz, sektörde lider ve örnek bir kuruluş olmaktır.
+        </p>
+    </div>
+    <section class="urun" id="urun"></section>
+</section>
+<section class="urunler">
+    <h2>Ürünlerimiz</h2>
+    <div class="urunler-grid">
+        <div class="urun-kart">
+            <img src="https://tse3.mm.bing.net/th/id/OIP.mICqWKBJxPIXssXxNVmynwHaHa?w=1440&h=1440&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Ürün 1">
+            <h3>Uzun demir</h3>
+            <p>Her alana uygundur.</p>
+        </div>
+        <div class="urun-kart">
+            <img src="https://tse3.mm.bing.net/th/id/OIP.zSUYcSp2kMpRlTOVxDw0IQHaEY?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Ürün 2">
+            <h3>Uzun demir</h3>
+            <p>Her alana kullanıma uygundur.</p>
+        </div>
+        <div class="urun-kart">
+            <img src="https://tse2.mm.bing.net/th/id/OIP.UXeN-fZjhiUPAYMuUBgUCQHaJ4?w=994&h=1326&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Ürün 3">
+            <h3>uzun inşat demiri</h3>
+            <p>uzun demir.</p>
+        </div>
+        <div class="urun-kart">
+            <img src="https://img.freepik.com/premium-photo/building-frames-with-reinforced-concrete-column_811250-7295.jpg" alt="Ürün 4">
+            <h3>Uzun inşat demiri</h3>
+            <p>inşata ugun demir.</p>
+        </div>
+        <div class="urun-kart">
+            <img src="https://www.oluklusac.com.tr/wp-content/uploads/2024/11/Demir-profil-fiyatlari.jpg" alt="Ürün 5">
+            <h3>Kare demir</h3>
+            <p>işat demiri.</p>
+        </div>
+        <div class="urun-kart">
+            <img src="https://tse3.mm.bing.net/th/id/OIP.7ITIEMcJT6AUJ9cflA5vjQHaEK?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Ürün 6">
+            <h3>Boru demiri</h3>
+            <p>Boru demiri</p>
+        </div>
+    </div>
+    <section class="iletişim" id="iletişim"></section>
+</section>
+<section class="iletisim" id="iletisim">
+  <h2>İletişim</h2>
+  <div class="iletisim-container">
+    <form class="iletisim-form">
+      <input type="text" placeholder="Adınız Soyadınız" required>
+      <input type="email" placeholder="E-posta Adresiniz" required>
+      <textarea placeholder="Mesajınız" rows="5" required></textarea>
+      <button type="submit">Gönder</button>
+    </form>
+    <div class="konum">
+      <h3>Konumumuz</h3>
+      <iframe 
+  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3185.0972335745744!2d30.5908051!3d37.455025!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14b8e0c8263d1e1d%3A0x991f4c6bcb2042d!2sKarayvatlar%2C%2015300%20Bucak%2FBurdur!5e0!3m2!1str!2str!4v1691519266741!5m2!1str!2str" 
+  width="100%" 
+  height="300" 
+  style="border:0;" 
+  allowfullscreen="" 
+  loading="lazy" 
+  referrerpolicy="no-referrer-when-downgrade">
+</iframe>
+
+    </div>
+  </div>
+</section>
+<footer class="site-footer">
+    <div class="footer-container">
+        <div class="footer-logo">
+           
+            <h4>Kaliteli ve güvenilir çözümler sunuyoruz.</h4>
+        </div>
+
+        <div class="footer-links">
+            <h3>Hızlı Menü</h3>
+            <ul>
+                <li><a href="#anasayfa">Anasayfa</a></li>
+                <li><a href="#anasayfa">Kurumsal</a></li>
+                <li><a href="#urun">Ürünler</a></li>
+                <li><a href="#urun">Hizmetler</a></li>
+                <li><a href="#iletişim">İletişim</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-contact">
+            <h3>İletişim</h3>
+            <p>Adres: Konya, Türkiye</p>
+            <p>Telefon: +90 555 555 55 55</p>
+            <p>E-posta: info@firmaadi.com</p>
+        </div>
+
+        <div class="footer-social">
+            <h3>Bizi Takip Edin</h3>
+            <a href="https://www.facebook.com/"> Facebook</a><br>
+            <a href="https://www.instagram.com/"> Instagram</a><br>
+            <a href="https://www.linkedin.com/feed/"> LinkedIn</a>
+        </div>
+    </div>
+
+</footer>
+
+</body>
+</html>
