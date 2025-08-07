@@ -1,211 +1,159 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Demircin</title>
-    <link rel="stylesheet" href="style.css">
-    <style>
-        body {
-    margin: 0;
-    font-family: 'Segoe UI', sans-serif;
-    background-color: #d0000d;
-}
-
-.navbar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: #d0000d;
-    padding: 10px 20px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-}
-
-.logo img {
-    height: 70px;
+  <meta charset="kaya izleri">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AYDEMİR</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
     
-    padding: 15px 20px;
-    border-radius: 20px;
-}
 
-.menu {
-    display: flex;
-    gap: 25px;
-}
+    
+    
 
-.menu a {
-    color:white;
-    text-decoration: none;
-    font-size: 16px;
-    font-weight: bold;
-    position: relative;
-}
-
-.menu a span {
-    color: white;
-    margin-left: 5px;
-}
-
-.actions {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-}
-
-.search {
-    font-size: 20px;
-    color: white;
-    cursor: pointer;
-}
-
-.language {
-    font-size: 14px;
-    color: white;
-    border: 1px solid white;
-    padding: 2px 5px;
-    border-radius: 4px;
-}
-
-.online-btn {
-    background-color: #d0000d;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 8px;
-    font-weight: bold;
-    cursor: pointer;
-}
-
-@media (max-width: 768px) {
-    .menu {
-        display: none;
+    .banner {
+      background: linear-gradient(to right, #000000, #464646); /* Mavi geçişli arka plan */
+      color: white;
+      padding: 50px 10px;
+      text-align: center;
     }
 
-    .navbar {
-        flex-wrap: wrap;
-        justify-content: center;
+    .banner-logo {
+      max-width: 70px;
+      margin-bottom: 10px;
+      margin-top:0px;
+    
     }
-}
-body {
-    margin: 0;
-    font-family: 'Segoe UI', sans-serif;
-    background-color: #f5f5f5;
-}
+    .banner-isim{
+        text-align: center;  
+        justify-content:center;
+        gap: 20px;
 
-.hakkimizda {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 50px;
-    background-color: white;
-    max-width: 1200px;
-    margin: 50px auto;
-    border-radius: 20px;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-}
-
-.hakkimizda-img img {
-    width: 500px;
-    height: auto;
-    border-radius: 20px;
-    object-fit: cover;
-}
-
-.hakkimizda-yazi {
-    margin-left: 40px;
-    max-width: 600px;
-}
-
-.hakkimizda-yazi h2 {
-    font-size: 32px;
-    margin-bottom: 20px;
-    color:#d0000d;
-}
-
-.hakkimizda-yazi p {
-    font-size: 18px;
-    line-height: 1.6;
-    color: #555;
-}
-
-@media (max-width: 768px) {
-    .hakkimizda {
-        flex-direction: column;
-        text-align: center;
     }
+    .banner-isim a{
+        color:white;
+        text-decoration:none;
+        font-weight:bold;
+        padding:8px 16px;
+        border-radius:4px;
+        transition:backgronund 0.3s;
 
-    .hakkimizda-img img {
-        width: 100%;
-        margin-bottom: 20px;
     }
-
-    .hakkimizda-yazi {
-        margin-left: 0;
+    .banner-isim a:hover{
+        background-color:#FFD700;
+        color: rgb(255, 255, 255);
     }
-}
-body {
-    margin: 0;
-    font-family: 'Segoe UI', sans-serif;
-    background-color: #f5f5f5;
-}
-
-.urunler {
-    text-align: center;
-    padding: 50px 20px;
-    background-color: white;
-    max-width: 1200px;
-    margin: 50px auto;
-    border-radius: 20px;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    
+    .site-footer {
+  background-color:#000000;
+  color: #ffffff;
+  padding: 20px 0;
+  text-align: center;
 }
 
-.urunler h2 {
-    font-size: 36px;
-    margin-bottom: 40px;
-    color:#d0000d;
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-.urunler-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 30px;
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
 }
 
-.urun-kart {
-    background-color: #fafafa;
-    padding: 20px;
-    border-radius: 15px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    transition: transform 0.3s ease;
+.footer-links a {
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.3s;
 }
 
-.urun-kart:hover {
-    transform: translateY(-5px);
+.footer-links a:hover {
+  color:#FFD700;
 }
 
-.urun-kart img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 10px;
-    margin-bottom: 15px;
+.social-icons {
+  margin-top: 10px;
 }
 
-.urun-kart h3 {
-    font-size: 20px;
-    margin-bottom: 10px;
-    color:#d0000d;
+.social-icons a {
+  color: #ffffff;
+  font-size: 20px;
+  margin: 0 10px;
+  transition: color 0.3s;
 }
 
-.urun-kart p {
-    font-size: 16px;
-    color: #555;
+.social-icons a:hover {
+  color:#FFD700;
+}
+.hakkımda{
+  font-size:30px;
+  transform:color;
+  margin: 0 43% 0;
+  color:#000000;
+  margin-top: 20px;
+}
+.hakkımda-yazı{
+  font-size:20px;
+  margin: 5px 0px 5px;
+  
+}
+    
+  
+.projeler {
+  padding: 50px 20px;
+  background-color: #f9f9f9;
+  text-align: center;
 }
 
-@media (max-width: 600px) {
-    .urun-kart img {
-        height: 150px;
-    }
+.projeler h2 {
+  font-size: 32px;
+  margin-bottom: 30px;
+  color: #000000;
+}
+
+.proje-kutulari {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.proje {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  width: 300px;
+  padding: 20px;
+  transition: transform 0.3s ease;
+}
+
+.proje:hover {
+  transform: scale(1.05);
+}
+
+.proje img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.proje h3 {
+  margin-top: 15px;
+  font-size: 20px;
+  color: #222;
+}
+
+.proje p {
+  color: #555;
+  font-size: 14px;
 }
 .iletisim {
   padding: 50px 20px;
@@ -215,9 +163,9 @@ body {
 
 .iletisim h2 {
   font-size: 32px;
-  color: #333;
+  color: #FFD700;
   margin-bottom: 30px;
-  color:#d0000d;
+  color:#000000;
 }
 
 .iletisim-container {
@@ -230,7 +178,7 @@ body {
 }
 
 .iletisim-form {
-  flex: 1 1 500px;
+  flex: 1 1 300px;
   display: flex;
   flex-direction: column;
   gap: 15px;
@@ -238,7 +186,7 @@ body {
 
 .iletisim-form input,
 .iletisim-form textarea {
-  padding: 20px;
+  padding: 10px;
   border: 1px solid #ccc;
   border-radius: 6px;
   font-size: 16px;
@@ -246,25 +194,64 @@ body {
 
 .iletisim-form button {
   padding: 12px;
-  background-color:#d0000d;
+  background-color:#000000;
   color: white;
   border: none;
-  border-radius: 10px;
+  border-radius: 6px;
   cursor: pointer;
   transition: background-color 0.3s;
 }
 
 .iletisim-form button:hover {
-  background-color: #555;
+  background-color:#FFD700;
 }
 
 .konum {
-  flex: 1 1 500px;
+  flex: 1 1 300px;
   text-align: left;
   
 }
+.proje {
+  position: relative;
+  overflow: hidden;
+}
+
+.proje-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Yarı saydam siyah katman */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+@keyframes slideInRight {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.proje-alt-baslik {
+  font-size: 24px;
+  color: #FFD700;
+  font-weight: bold;
+  margin-bottom: 30px;
+  animation: slideInRight 1.5s ease-out forwards;
+  opacity: 0;
+}
+
+
 .site-footer {
-    background-color:#d0000d;
+    background-color:#000000;
     color: #ffffff;
     padding: 40px 20px 20px 20px;
     font-family: 'Segoe UI', sans-serif;
@@ -311,7 +298,7 @@ body {
 }
 
 .footer-links a:hover {
-    color:white;
+    color:#FFD700;
 }
 
 .footer-contact p {
@@ -326,7 +313,7 @@ body {
 }
 
 .footer-social a:hover {
-    color:white;
+    color:#FFD700;
 }
 
 .footer-bottom {
@@ -349,110 +336,142 @@ body {
         margin-bottom: 20px;
     }
 }
+.video{
+  margin-left: 30%;
+}
 
-
-
-
-    </style>
+  </style>
 </head>
 <body>
-    <header class="navbar">
-        <div class="logo">
-            <img src="logo2.png" alt="Demircin Logo">
 
-        </div>
-        <nav class="menu">
-            <a href="#anasayfa">Anasayfa <span>+</span></a>
-            <a href="#hakkımda">Hakkımızda <span>+</span></a>
-            <a href="#urun">Ürünler <span>+</span></a>
-            <a href="#iletişim">İletişim <span>+</span></a>
-           
-        </nav>
-        </div>
-       <section class="anasayfa" id="anasayfa"></section>
-    </header>
-     <img src="demir.png" width="1505" height="650">
-     
-<section class="hakkimizda">
-    <div class="hakkimizda-img">
-        <img src="https://www.steelradar.com/i/l/013/0135114_10mm-insaat-demiri.jpeg" alt="Hakkımızda Görseli">
-    </div>
-    <div class="hakkimizda-yazi">
-        <section class="hakkımda" id="hakkımda"></section>
-        <h2>Hakkımızda</h2>
-        <p>
-            Firmamız, yıllardır sektörde edindiği tecrübeyle müşterilerine kaliteli hizmet sunmaktadır.
-            Misyonumuz, yenilikçi ve sürdürülebilir çözümlerle müşteri memnuniyetini en üst düzeyde tutmaktır.
-            Vizyonumuz, sektörde lider ve örnek bir kuruluş olmaktır.
-        </p>
-    </div>
-    <section class="urun" id="urun"></section>
+  <div class="banner">
+    <img src="AYDEMİR.png" alt="Logo" class="banner-logo" width="60" height="60">
+    <nav class="banner-isim">
+        <a href="#anasayfa" >ANASAYFA</a>
+        <a href="#hakkımızda">HAKIMIZDA</a>
+        <a href="#projeler">PROJELLER</a>
+        
+        <a href="iletisim">İLETİŞİM</a>
+    </nav>
+    
+  </div>
+  </div>
+  
+<section class="Geri dönüşüm projeler">
+  <h2> Aydemir Geri Dönüşüm Projelerimiz</h2>
+  <div class="proje-alt-baslik">Eski Yapıları Modernleştiriyoruz</div>
+  <div class="proje-kutulari"  style="cursor: pointer;">
+    <img  src="https://i.pinimg.com/originals/90/86/3f/90863fe47ffb8a088c2c2939321ef882.jpg" width="600" height="400">
+    <img src="https://www.karmod.com/media/galleries/1342/tek-katli-celik-evler-3275_1.jpg" width="600" height="400">
+    <!-- Proje kutuların burası devam ediyor... -->
+  </div>
 </section>
-<section class="urunler">
-    <h2>Ürünlerimiz</h2>
-    <div class="urunler-grid">
-        <div class="urun-kart">
-            <img src="https://tse3.mm.bing.net/th/id/OIP.mICqWKBJxPIXssXxNVmynwHaHa?w=1440&h=1440&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Ürün 1">
-            <h3>Uzun demir</h3>
-            <p>Her alana uygundur.</p>
-        </div>
-        <div class="urun-kart">
-            <img src="https://tse3.mm.bing.net/th/id/OIP.zSUYcSp2kMpRlTOVxDw0IQHaEY?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Ürün 2">
-            <h3>Uzun demir</h3>
-            <p>Her alana kullanıma uygundur.</p>
-        </div>
-        <div class="urun-kart">
-            <img src="https://tse2.mm.bing.net/th/id/OIP.UXeN-fZjhiUPAYMuUBgUCQHaJ4?w=994&h=1326&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Ürün 3">
-            <h3>uzun inşat demiri</h3>
-            <p>uzun demir.</p>
-        </div>
-        <div class="urun-kart">
-            <img src="https://img.freepik.com/premium-photo/building-frames-with-reinforced-concrete-column_811250-7295.jpg" alt="Ürün 4">
-            <h3>Uzun inşat demiri</h3>
-            <p>inşata ugun demir.</p>
-        </div>
-        <div class="urun-kart">
-            <img src="https://www.oluklusac.com.tr/wp-content/uploads/2024/11/Demir-profil-fiyatlari.jpg" alt="Ürün 5">
-            <h3>Kare demir</h3>
-            <p>işat demiri.</p>
-        </div>
-        <div class="urun-kart">
-            <img src="https://tse3.mm.bing.net/th/id/OIP.7ITIEMcJT6AUJ9cflA5vjQHaEK?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Ürün 6">
-            <h3>Boru demiri</h3>
-            <p>Boru demiri</p>
-        </div>
+
+  
+  
+  <section class="hakkımızda" id="hakkımızda"></section>
+  <h1 class="hakkımda">Hakkımızda</h1>
+  <p class="hakkımda-yazı"> Firmamız kentsel dönüşüm süreçlerinde uzman kadrosuyla
+     danışmanlık ve uygulama hizmetleri sunmaktadır. Binalarınız için en doğru ve güvenli 
+     çözümleri üretiyoruz.Firmamız kentsel dönüşüm süreçlerinde uzman kadrosuyla
+     danışmanlık ve uygulama hizmetleri sunmaktadır. Binalarınız için en doğru ve güvenli 
+     çözümleri üretiyoruz.Firmamız kentsel dönüşüm süreçlerinde uzman kadrosuyla
+     danışmanlık ve uygulama hizmetleri sunmaktadır. Binalarınız için en doğru ve güvenli 
+     çözümleri üretiyoruz.Firmamız kentsel dönüşüm süreçlerinde uzman kadrosuyla
+     danışmanlık ve uygulama hizmetleri sunmaktadır. Binalarınız için en doğru ve güvenli
+      çözümleri üretiyoruz.Firmamız kentsel dönüşüm süreçlerinde uzman kadrosuyla
+     danışmanlık ve uygulama hizmetleri sunmaktadır. Binalarınız için en doğru ve güvenli
+      çözümleri üretiyoruz.Firmamız kentsel dönüşüm süreçlerinde uzman kadrosuyla
+     danışmanlık ve uygulama hizmetleri sunmaktadır. Binalarınız için en doğru ve güvenli 
+     çözümleri üretiyoruz.Firmamız kentsel dönüşüm süreçlerinde uzman kadrosuyla
+     danışmanlık ve uygulama hizmetleri sunmaktadır. Binalarınız için en doğru ve güvenli çözümleri 
+     üretiyoruz. Firmamız kentsel dönüşüm süreçlerinde uzman kadrosuyla
+     danışmanlık ve uygulama hizmetleri sunmaktadır. Binalarınız için en doğru ve güvenli 
+     çözümleri üretiyoruz.Firmamız kentsel dönüşüm süreçlerinde uzman kadrosuyla
+     danışmanlık ve uygulama hizmetleri sunmaktadır. Binalarınız için en doğru ve güvenli 
+     çözümleri üretiyoruz.Firmamız kentsel dönüşüm süreçlerinde uzman kadrosuyla
+     danışmanlık ve uygulama hizmetleri sunmaktadır. Binalarınız için en doğru ve güvenli 
+     çözümleri üretiyoruz.Firmamız kentsel dönüşüm süreçlerinde uzman kadrosuyla
+     danışmanlık ve uygulama hizmetleri sunmaktadır. Binalarınız için en doğru ve güvenli
+      çözümleri üretiyoruz.Firmamız kentsel dönüşüm süreçlerinde uzman kadrosuyla
+     danışmanlık ve uygulama hizmetleri sunmaktadır. Binalarınız için en doğru ve güvenli
+      çözümleri üretiyoruz.Firmamız kentsel dönüşüm süreçlerinde uzman kadrosuyla
+     danışmanlık ve uygulama hizmetleri sunmaktadır. Binalarınız için en doğru ve güvenli 
+     çözümleri üretiyoruz.Firmamız kentsel dönüşüm süreçlerinde uzman kadrosuyla
+     danışmanl</p>
+  <iframe class="video" width="620" height="400" src="https://www.youtube.com/embed/Ep-XCi_4fGg?si=-0b6jMxbtzu-_yO0&amp;start=7" 
+  title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; 
+  picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen  ></iframe>
+  
+  <section class="Geri dönüşüm projeler" id="projeler">
+  <h2>Geri Dönüşüm Projelerimiz</h2>
+  <div class="proje-kutulari" onclick="window.location.href='projeler.html'" style="cursor: pointer;">
+    <div class="proje" >
+      <img src="https://www.karamanhabercisi.com/d/news/36717.jpg" alt="Proje 1">
+      <h3>ESKİ BİNA</h3>
+      <p>Mersindeki eski konutumuzu en modern haline getirdik.</p>
+      
     </div>
-    <section class="iletişim" id="iletişim"></section>
+    <div class="proje">
+      <img srC="https://www.etilerdekorasyon.net/wp-content/uploads/2023/03/bina-guclendirme-1024x535.jpg" alt="Proje 2">
+      <h3>GÜÇLENDİRME VE YENİLEME</h3>
+      <p>Burdurdaki konutumuza güçlendirme uyguladık.</p>
+    </div>
+    <div class="proje">
+      <img src="https://agsmetal.com/dosyalar/site_resim/proje/3491161.jpg" alt="Proje 3">
+      <h3>SİTE DÖNÜŞÜM PROJESİ</h3>
+      <p>Antalyadaki site dönüşüm projemiz.</p>
+    </div>
+    <div class="proje">
+      <img src="https://www.mtdekorasyon.com.tr/rsmlr/hizmetk/resim123.jpg" alt="Proje 4">
+      <h3>Yenileme</h3>
+      <p>Eski yapıda olan binamıza yenilleme faliyetinde bulunduk.</p>
+    </div>
+    <div class="proje">
+      <img src="https://evgezmesi.com/storage/assets/p/27441-eQZyi7jUDCID29Au.jpg" alt="Proje 4">
+      <h3>Yenileme</h3>
+      <p>Eski yapıda olan binamıza yenilleme faliyetinde bulunduk.</p>
+    </div>
+    <div class="proje">
+      <img src="https://dehayapiinsaat.com/wp-content/uploads/2022/08/20210827_120135-768x1024.jpg" alt="Proje 4">
+      <h3>Yenileme</h3>
+      <p>Eski yapıda olan binamıza yenilleme faliyetinde bulunduk.</p>
+    </div>
+    <div class="proje">
+      <img src="https://www.webtekno.com/images/editor/default/0003/93/d4ac547081f53834618f1f3b38c5b3f2aa0f6168.jpeg" alt="Proje 4">
+      <h3>Güçlendirme</h3>
+      <p>Eski yapıda olan binamıza güçlendirme ve yenileme faliyetinde bulunduk.</p>
+    </div>
+    <div class="proje">
+      <img src="https://www.webtekno.com/images/editor/default/0003/93/162c117f811b34cfdb13de59355a579ee8e25c04.jpeg" alt="Proje 4">
+      <h3>Güçlendirme</h3>
+      <p>Eski yapıda olan binamıza güçlendirme ve yenileme faliyetinde bulunduk.</p>
+    </div>
+    
+    
+  </div>
 </section>
 <section class="iletisim" id="iletisim">
-  <h2>İletişim</h2>
+  <h2>Başvuru Formu</h2>
   <div class="iletisim-container">
     <form class="iletisim-form">
-      <input type="text" placeholder="Adınız Soyadınız" required>
-      <input type="email" placeholder="E-posta Adresiniz" required>
-      <textarea placeholder="Mesajınız" rows="5" required></textarea>
+      <input type="text" placeholder="Adınızz ve Soyadınız:" required>
+      <input type="email" placeholder="E-Posta Adresiniz:" required>
+      <textarea placeholder="Bina ilgisi ve Talepleriniz:" rows="5" required></textarea>
       <button type="submit">Gönder</button>
     </form>
-    <div class="konum">
-      <h3>Konumumuz</h3>
-      <iframe 
-  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3185.0972335745744!2d30.5908051!3d37.455025!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14b8e0c8263d1e1d%3A0x991f4c6bcb2042d!2sKarayvatlar%2C%2015300%20Bucak%2FBurdur!5e0!3m2!1str!2str!4v1691519266741!5m2!1str!2str" 
-  width="100%" 
-  height="300" 
-  style="border:0;" 
-  allowfullscreen="" 
-  loading="lazy" 
-  referrerpolicy="no-referrer-when-downgrade">
-</iframe>
+      
 
     </div>
   </div>
 </section>
-<footer class="site-footer">
+
+
+   <footer class="site-footer">
     <div class="footer-container">
         <div class="footer-logo">
            
-            <h4>Kaliteli ve güvenilir çözümler sunuyoruz.</h4>
+            <h4>Kalitel ve Güven sunuyoruz.</h4>
         </div>
 
         <div class="footer-links">
@@ -460,17 +479,17 @@ body {
             <ul>
                 <li><a href="#anasayfa">Anasayfa</a></li>
                 <li><a href="#anasayfa">Kurumsal</a></li>
-                <li><a href="#urun">Ürünler</a></li>
-                <li><a href="#urun">Hizmetler</a></li>
-                <li><a href="#iletişim">İletişim</a></li>
+                <li><a href="#projeler">Projeler</a></li>
+                <li><a href="#projeler">Hizmetler</a></li>
+                <li><a href="#iletisim">İletişim</a></li>
             </ul>
         </div>
 
         <div class="footer-contact">
             <h3>İletişim</h3>
-            <p>Adres: Konya, Türkiye</p>
+            <p>Adres: Burdur, Türkiye</p>
             <p>Telefon: +90 555 555 55 55</p>
-            <p>E-posta: info@firmaadi.com</p>
+            <p>E-posta: info@aydemir.com</p>
         </div>
 
         <div class="footer-social">
@@ -482,6 +501,8 @@ body {
     </div>
 
 </footer>
+
+
 
 </body>
 </html>
